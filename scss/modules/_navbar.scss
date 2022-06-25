@@ -1,0 +1,86 @@
+nav#navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  font-weight: 700;
+  color: #fefefe;
+  font-size: 1.4rem;
+}
+
+nav#navbar a {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: $font-color;
+  transition: color 0.4s;
+}
+
+nav#navbar a:hover {
+  color: $accent;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.middle-nav {
+  display: flex;
+  flex: 1;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+.middle-nav .nav-item:last-of-type {
+  margin-right: 0;
+}
+
+.contact-actions a {
+  margin-right: 15px;
+}
+
+.contact-actions {
+  margin-right: 0;
+}
+
+.contact-actions a:last-of-type {
+  margin-right: 0;
+}
+
+.right-nav .nav-item:not(.contact-actions) {
+  margin-right: 20px;
+}
+
+.right-nav .nav-item:not(.contact-actions) div {
+  width: 100px;
+}
+
+.right-nav .nav-item:not(.contact-actions) a {
+  background-color: #fff2;
+  padding: 6px 10px;
+  border-radius: 35px;
+  font-size: 0.9rem;
+}
+
+.right-nav .nav-item:not(.contact-actions) a i {
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  transition: margin-left 0.3s;
+}
+
+.right-nav:hover .nav-item:not(.contact-actions):hover a i {
+  margin-left: 7px;
+}
+
+.showcase {
+  position: relative;
+}

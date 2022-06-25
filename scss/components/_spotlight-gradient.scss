@@ -1,0 +1,23 @@
+.abs-ellipse:first-of-type {
+  position: absolute;
+  top: 224px;
+  left: 35%;
+  width: 270px;
+  height: 400px;
+  border-radius: 23% 77% 43% 57% / 48% 72% 28% 52%;
+  background-color: hsla(198, 93%, 60%, 15%);
+  transform: rotateZ(-33deg);
+  filter: blur(4rem);
+}
+
+.abs-ellipse:last-of-type {
+  position: absolute;
+  top: 300px;
+  left: 45%;
+  width: 300px;
+  height: 445px;
+  border-radius: 100% 0% 43% 57% / 100% 12% 88% 0%;
+  background-color: rgba(161, 19, 73, 15%);
+  transform: rotateZ(30deg);
+  filter: blur(3rem);
+}
