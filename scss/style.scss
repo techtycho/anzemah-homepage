@@ -26,7 +26,7 @@ body {
 .container {
   padding: 20px;
   height: 100%;
-  background-image: radial-gradient(transparent, #0a1324 90%);
+  background-image: radial-gradient(transparent, #0a1324 70%);
   background-repeat: no-repeat;
 }
 
@@ -35,4 +35,42 @@ body {
   width: 0;
   height: 30px;
   margin-right: 25px;
+}
+
+.showcase__title {
+  color: #fff;
+  font-family: "Inter var", sans-serif;
+  font-weight: 900;
+  font-size: 3.6em;
+  width: 1000px;
+  line-height: 3.6rem;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.showcase__title span {
+  background-image: linear-gradient(
+    to right,
+    $accent,
+    hsl(198, 93%, 40%),
+    $accent,
+    hsl(198, 93%, 40%)
+  );
+  background-size: 400% 100%;
+  background-clip: text;
+  padding: 0 1px;
+  position: relative;
+  color: transparent;
+  animation: moveBg 5s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
 }
