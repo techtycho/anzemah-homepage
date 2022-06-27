@@ -5,6 +5,7 @@
 
 @import "modules/navbar";
 @import "components/spotlight-gradient";
+@import "animations/keyframes";
 
 * {
   box-sizing: border-box;
@@ -14,20 +15,16 @@
 
 body {
   background-color: $background-color;
-  background-image: url("/assets/img/grid.svg");
   background-size: 300px;
   color: $font-color;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
-  height: 100vh;
 }
 
 .container {
   padding: 20px;
-  height: 100%;
-  background-image: radial-gradient(transparent, #0a1324 70%);
-  background-repeat: no-repeat;
+  width: 90;
 }
 
 .nav-separator {
@@ -47,23 +44,24 @@ body {
   margin: auto;
   margin-top: 150px;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .showcase__title span:first-of-type {
   background-image: linear-gradient(
     to right,
     $accent,
-    hsl(198, 93%, 40%),
+    hsl(198, 93%, 35%),
     $accent,
-    hsl(198, 93%, 40%)
+    hsl(198, 93%, 35%)
   );
   background-size: 400% 100%;
   background-clip: text;
   padding: 0 1px;
   position: relative;
   color: #fff;
-  animation: startAnimGradient 0.3s 0.5s linear forwards,
-    moveBg 5s linear infinite;
+  animation: startMoveGradient 0.3s 0.5s linear forwards,
+    animMoveGradient 5s linear infinite;
 }
 
 .showcase__title span:last-of-type {
@@ -90,22 +88,7 @@ body {
   }
 }
 
-@keyframes startAnimGradient {
-  0% {
-    color: #fff;
-  }
-
-  100% {
-    color: transparent;
-  }
-}
-
-@keyframes moveBg {
-  0% {
-    background-position: left;
-  }
-
-  100% {
-    background-position: right;
-  }
+.showcase__content {
+  color: rgb(148, 163, 184);
+  text-align: center;
 }
