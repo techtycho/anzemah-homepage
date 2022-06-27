@@ -55,22 +55,4 @@ nav#navbar {
   div {
     width: 100px;
   }
-
-  a {
-    background-color: #fff2;
-    padding: 6px 10px;
-    border-radius: 35px;
-    font-size: 0.9rem;
-
-    i {
-      display: inline-block;
-      margin-left: 3px;
-      font-size: 0.8rem;
-      transition: margin-left 0.3s;
-    }
-  }
-
-  &:hover a i {
-    margin-left: 7px;
-  }
 }
