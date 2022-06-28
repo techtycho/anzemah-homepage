@@ -24,7 +24,8 @@ body {
 
 .container {
   padding: 20px;
-  width: 90;
+  width: 80%;
+  margin: auto;
 }
 
 .nav-separator {
@@ -32,6 +33,11 @@ body {
   width: 0;
   height: 30px;
   margin-right: 25px;
+}
+
+.showcase {
+  width: fit-content;
+  margin: auto;
 }
 
 .showcase__title {
@@ -95,8 +101,9 @@ body {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
-  width: 500px;
+  width: 600px;
   margin: auto;
+  margin-bottom: 60px;
 }
 
 .showcase__content::after {
@@ -109,4 +116,18 @@ body {
 
 .typing::after {
   opacity: 1;
+}
+
+.showcase__btn {
+  display: block;
+  opacity: 1;
+  width: fit-content;
+  margin: auto;
+}
+
+.showcase__btn .btn {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin-right: 10px;
 }

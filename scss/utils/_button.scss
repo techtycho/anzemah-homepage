@@ -1,9 +1,12 @@
-.btn {
+.secondary-btn {
+  font-family: "Inter", sans-serif;
   background-color: #fff2;
   padding: 6px 10px;
   border-radius: 35px;
   font-size: 0.9rem;
   color: $font-color;
+  text-decoration: none;
+  transition: color 0.4s;
 
   &:hover {
     color: $accent;
@@ -18,5 +21,20 @@
     margin-left: 3px;
     font-size: 0.8rem;
     transition: margin-left 0.3s;
+  }
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: hsl(198, 93%, 40%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 0 #0003;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: $accent;
+    box-shadow: 0 0 20px 10px #0003;
   }
 }
