@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background-color;
   background-size: 300px;
@@ -22,10 +26,42 @@ body {
   font-weight: 400;
 }
 
+%link {
+  color: $font-color;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $accent;
+    cursor: pointer;
+  }
+}
+
+.link {
+  @extend %link;
+}
+
+.hyperlink {
+  @extend %link;
+  color: $accent;
+  border-bottom: 1px solid $accent;
+  transition: color 0.3s, border-color 0.3s;
+
+  &:hover {
+    color: hsl(198, 93%, 30%);
+    border-color: hsl(198, 93%, 30%);
+  }
+}
+
 .container {
   padding: 20px;
   width: 80%;
   margin: auto;
+}
+
+.separator {
+  margin-top: 75px;
+  border-bottom: 1px solid #fff2;
 }
 
 .nav-separator {
@@ -158,8 +194,11 @@ body {
 }
 
 .card__title {
-  color: $accent;
   margin-bottom: 20px;
+
+  a {
+    color: $accent;
+  }
 }
 
 .card__content {
@@ -192,4 +231,96 @@ body {
 .partners img:hover {
   cursor: pointer;
   filter: contrast(1);
+}
+
+.article {
+  margin-top: 75px;
+  display: flex;
+}
+
+.article__img {
+  border-radius: 7px;
+  box-shadow: 0 5px 20px 0 #0005;
+  height: 230px;
+}
+
+.article__content {
+  margin-left: 40px;
+}
+
+.article__title {
+  margin-bottom: 20px;
+}
+
+.article__paragraph {
+  margin-bottom: 40px;
+}
+
+.inverse .article__content {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.inverse .article__img {
+  height: fit-content;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.quick-links {
+  flex: 1;
+}
+
+.newsletter {
+  width: 200px;
+}
+
+.footer__content {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+}
+
+.footer__btn {
+  display: block;
+  margin-top: 25px;
+  width: fit-content;
+}
+
+.footer__links {
+  margin-top: 25px;
+  list-style: none;
+}
+
+.follow-us {
+  width: 200px;
+}
+
+.social-media-links {
+  margin-top: 30px;
+  font-size: 1.8rem;
+
+  a {
+    margin-right: 10px;
+  }
+}
+
+.copyright {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright p {
+  flex: 1;
+}
+
+.copyright a {
+  margin-right: 30px;
 }
