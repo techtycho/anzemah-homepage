@@ -25,11 +25,6 @@ nav#navbar {
   }
 }
 
-.nav-item {
-  margin-right: 30px;
-  font-weight: 500;
-}
-
 .right-nav {
   display: flex;
   align-items: center;
@@ -65,4 +60,33 @@ nav#navbar {
   div {
     width: 100px;
   }
+}
+
+.dropdown {
+  position: absolute;
+  // Left is automatically calculated with JS
+  top: 40px;
+  background-color: $card-color;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px 5px #0005;
+  width: max-content;
+  opacity: 1;
+  transition: opacity 0.2s;
+
+  &::before {
+    content: "";
+    padding: 7px;
+    background-color: $card-color;
+    position: absolute;
+    top: -14px;
+    left: calc(50% - 7px);
+    clip-path: polygon(7px 5px, 14px 14px, 0 14px);
+  }
+}
+
+.nav-item {
+  margin-right: 30px;
+  font-weight: 500;
+  position: relative;
 }

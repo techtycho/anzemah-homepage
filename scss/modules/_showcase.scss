@@ -10,7 +10,7 @@
     width: 1000px;
     line-height: 4rem;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 220px;
     text-align: center;
     margin-bottom: 35px;
 
@@ -18,11 +18,11 @@
       background-image: linear-gradient(
         to right,
         $accent,
-        hsl(198, 93%, 30%),
+        $darkblue,
         $accent,
-        hsl(198, 93%, 30%),
+        $darkblue,
         $accent,
-        hsl(198, 93%, 30%)
+        $darkblue
       );
       background-size: 400% 100%;
       background-clip: text;
@@ -59,21 +59,13 @@
   }
 
   &__content {
-    color: rgb(148, 163, 184);
+    color: $lightgray;
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 1.2rem;
     width: 600px;
     margin: auto;
     margin-bottom: 60px;
-
-    &::after {
-      content: "";
-      padding: 1px;
-      background-color: #a0a0a0;
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
   }
 
   &__btn {

@@ -8,7 +8,7 @@ window.onscroll = () => {
     navbar.style.backgroundColor = "#000d";
 
     // ? Is the window scrolling backwards ?
-    if (this.oldScroll > this.scrollY && scroll > 1000) {
+    if (this.oldScroll > this.scrollY && scroll > 750) {
       navbar.style.top = "-75px";
     } else {
       navbar.style.top = "0";

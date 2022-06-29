@@ -1,6 +1,6 @@
 .secondary-btn {
   font-family: "Inter", sans-serif;
-  background-color: #fff2;
+  background-color: $translucent;
   padding: 6px 10px;
   border-radius: 35px;
   font-size: 0.9rem;
@@ -27,7 +27,7 @@
 .btn {
   display: block;
   padding: 10px 15px;
-  background-color: hsl(198, 93%, 40%);
+  background-color: $blue;
   color: #fff;
   text-decoration: none;
   border-radius: 7px;
