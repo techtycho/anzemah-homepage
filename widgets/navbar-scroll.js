@@ -9,7 +9,10 @@ window.onscroll = () => {
 
     // ? Is the window scrolling backwards ?
     if (this.oldScroll > this.scrollY && scroll > 750) {
-      navbar.style.top = "-75px";
+      // Checks if any dropdown menus are active
+      if (!isDropdown) {
+        navbar.style.top = "-75px";
+      }
     } else {
       navbar.style.top = "0";
     }

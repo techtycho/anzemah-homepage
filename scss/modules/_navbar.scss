@@ -64,14 +64,14 @@ nav#navbar {
 
 .dropdown {
   position: absolute;
-  // Left is automatically calculated with JS
+  left: -100px;
   top: 40px;
   background-color: $card-color;
-  padding: 30px;
+  padding: 25px;
   border-radius: 5px;
   box-shadow: 0 2px 20px 5px #0005;
   width: max-content;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s;
 
   &::before {
@@ -80,7 +80,7 @@ nav#navbar {
     background-color: $card-color;
     position: absolute;
     top: -14px;
-    left: calc(50% - 7px);
+    left: 125px;
     clip-path: polygon(7px 5px, 14px 14px, 0 14px);
   }
 }
@@ -89,4 +89,55 @@ nav#navbar {
   margin-right: 30px;
   font-weight: 500;
   position: relative;
+}
+
+.dropdown {
+  display: flex;
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $translucent;
+
+      i {
+        margin-right: 5px;
+        transition: transform 0.3s;
+      }
+    }
+  }
+
+  .nav-separator {
+    display: none;
+    margin-left: 25px;
+    height: 180px;
+  }
+}
+
+.dropdown-services {
+  flex: 1;
+}
+
+.dropdown-cybersecurity {
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.3s, opacity 0.2s 0.1s;
+
+  .dropdown__item {
+    width: 100%;
+    white-space: nowrap;
+  }
 }
