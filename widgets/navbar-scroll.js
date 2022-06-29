@@ -13,6 +13,8 @@ window.onscroll = () => {
       } else {
         navbar.style.top = "0";
       }
+    } else {
+      navbar.style.top = "0";
     }
   } else {
     navbar.style.background = "none";
