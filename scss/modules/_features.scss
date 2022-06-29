@@ -1,0 +1,12 @@
+.content {
+  margin-top: 200px;
+  border-top: 1px solid #fff1;
+  background-color: #0c1324;
+  padding: 50px 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}

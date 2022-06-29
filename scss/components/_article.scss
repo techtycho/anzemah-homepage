@@ -1,0 +1,33 @@
+.article {
+  margin-top: 75px;
+  display: flex;
+
+  &__img {
+    border-radius: 7px;
+    box-shadow: 0 5px 20px 0 #0005;
+    height: 230px;
+  }
+
+  &__content {
+    margin-left: 40px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    margin-bottom: 40px;
+  }
+}
+
+.inverse {
+  .article__content {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+
+  .article__img {
+    height: fit-content;
+  }
+}

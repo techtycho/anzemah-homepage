@@ -1,0 +1,26 @@
+%link {
+  color: $font-color;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $accent;
+    cursor: pointer;
+  }
+}
+
+.link {
+  @extend %link;
+}
+
+.hyperlink {
+  @extend %link;
+  color: $accent;
+  border-bottom: 1px solid $accent;
+  transition: color 0.3s, border-color 0.3s;
+
+  &:hover {
+    color: hsl(198, 93%, 30%);
+    border-color: hsl(198, 93%, 30%);
+  }
+}

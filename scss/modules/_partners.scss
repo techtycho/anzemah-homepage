@@ -1,0 +1,21 @@
+.partners {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #1d2736;
+  padding: 40px;
+  border-radius: 7px;
+  position: relative;
+
+  img {
+    display: block;
+    filter: contrast(0);
+    transition: filter 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      filter: contrast(1);
+    }
+  }
+}

@@ -1,18 +1,15 @@
 const navbar = document.querySelector(".nav-container");
+let scroll;
 
 window.onscroll = () => {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  scroll = document.documentElement.scrollTop; // Capture the scroll
+
+  if (scroll > 40) {
     navbar.style.backgroundColor = "#000d";
 
-    if (
-      document.body.scrollTop > 1000 ||
-      document.documentElement.scrollTop > 1000
-    ) {
-      if (this.oldScroll > this.scrollY) {
-        navbar.style.top = "-75px";
-      } else {
-        navbar.style.top = "0";
-      }
+    // ? Is the window scrolling backwards ?
+    if (this.oldScroll > this.scrollY && scroll > 1000) {
+      navbar.style.top = "-75px";
     } else {
       navbar.style.top = "0";
     }
